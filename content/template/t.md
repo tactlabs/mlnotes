@@ -1,12 +1,12 @@
 ---
-title: "one"
+title: "t"
 author: "Altair"
 type: article
 draft: false
 --- 
 
 ```python
-a = 2
+a = 8
 ```
 
 
@@ -17,11 +17,6 @@ a * a
 
 
 
-    4
+    64
 
 
-
-
-```python
-
-```

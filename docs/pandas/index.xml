@@ -10,12 +10,41 @@
     
     
     <item>
-      <title>three</title>
-      <link>https://tactlabs.github.io/mlnotes/pandas/three/</link>
+      <title>add-a-new-column</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/add-a-new-column/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://tactlabs.github.io/mlnotes/pandas/three/</guid>
-      <description>c = 2 c * c 4  </description>
+      <guid>https://tactlabs.github.io/mlnotes/pandas/add-a-new-column/</guid>
+      <description>import pandas as pd data = { &amp;#39;city&amp;#39; : [&amp;#39;Toronto&amp;#39;, &amp;#39;Montreal&amp;#39;, &amp;#39;Waterloo&amp;#39;], &amp;#39;points&amp;#39; : [80, 70, 90] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39;: [80, 70, 90]}  type(data) dict  df = pd.DataFrame(data) df = df.assign(code = [1, 2, 3]) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  city points code     0 Toronto 80 1   1 Montreal 70 2   2 Waterloo 90 3     </description>
+    </item>
+    
+    <item>
+      <title>advanced-custom-lambda</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/advanced-custom-lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/advanced-custom-lambda/</guid>
+      <description>import numpy as np import pandas as pd # Check the student passed either math or passed at least in 2 subjects. If no condidition matched, consider them as failed def pass_math_or_two_subjects(row): if(row.maths &amp;gt; 34): return &amp;#39;Pass&amp;#39; if(row.language &amp;gt; 34 and row.science &amp;gt; 34): return &amp;#39;Pass&amp;#39; return &amp;#39;Fail&amp;#39; df = pd.read_csv(&amp;#39;abc.csv&amp;#39;) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }</description>
+    </item>
+    
+    <item>
+      <title>apply-custom-function</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/apply-custom-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/apply-custom-function/</guid>
+      <description>import pandas as pd data = { &amp;#39;city&amp;#39; : [&amp;#39;Toronto&amp;#39;, &amp;#39;Montreal&amp;#39;, &amp;#39;Waterloo&amp;#39;], &amp;#39;points&amp;#39; : [80, 70, 90] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39;: [80, 70, 90]}  type(data) dict  df = pd.DataFrame(data) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  city points     0 Toronto 80   1 Montreal 70   2 Waterloo 90     def get_bonus(x): if (x &amp;gt; 75): return x + 10 return x df[&amp;#39;new_points&amp;#39;] = df[&amp;#39;points&amp;#39;].</description>
+    </item>
+    
+    <item>
+      <title>apply-function</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/apply-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/apply-function/</guid>
+      <description>import pandas as pd data = { &amp;#39;city&amp;#39; : [&amp;#39;Toronto&amp;#39;, &amp;#39;Montreal&amp;#39;, &amp;#39;Waterloo&amp;#39;, &amp;#39;Toronto&amp;#39;, &amp;#39;Waterloo&amp;#39;, &amp;#39;Toronto&amp;#39;, &amp;#39;Toronto&amp;#39;], &amp;#39;points&amp;#39; : [80, 70, 90, 85, 79, 82, 200] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;, &#39;Toronto&#39;, &#39;Waterloo&#39;, &#39;Toronto&#39;, &#39;Toronto&#39;], &#39;points&#39;: [80, 70, 90, 85, 79, 82, 200]}  type(data) dict  df = pd.DataFrame(data) df.groupby(&amp;#39;city&amp;#39;)[&amp;#39;points&amp;#39;].apply(lambda x:x.rolling(window=1).mean()) 0 80.0 1 70.0 2 90.0 3 85.0 4 79.0 5 82.0 6 200.0 Name: points, dtype: float64  df.</description>
     </item>
     
   </channel>
