@@ -1,0 +1,49 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TactLabs</title>
+    <link>https://tactlabs.github.io/mlnotes/python/index.xml</link>
+    <description></description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+        <atom:link href="https://tactlabs.github.io/mlnotes/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>advanced</title>
+      <link>https://tactlabs.github.io/mlnotes/python/advanced/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/python/advanced/advanced/</guid>
+      <description>print(&amp;#34;advanced&amp;#34;) Running cells with &#39;Python 3.8.5 64-bit (&#39;base&#39;: conda)&#39; requires ipykernel package. Run the following command to install &#39;ipykernel&#39; into the Python environment. Command: &#39;conda install -n base ipykernel --update-deps --force-reinstall&#39;  </description>
+    </item>
+    
+    <item>
+      <title>basic</title>
+      <link>https://tactlabs.github.io/mlnotes/python/basic/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/python/basic/basic/</guid>
+      <description>print(&amp;#34;basic&amp;#34;) Failed to start the Kernel. Kernel tar (Python 3.10.0) is not usable. Check the Jupyter output tab for more information. View Jupyter &amp;lt;a href=&#39;command:jupyter.viewOutput&#39;&amp;gt;log&amp;lt;/a&amp;gt; for further details.  </description>
+    </item>
+    
+    <item>
+      <title>one</title>
+      <link>https://tactlabs.github.io/mlnotes/python/basics/one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/python/basics/one/</guid>
+      <description>a = 2 a * a 4  </description>
+    </item>
+    
+    <item>
+      <title>two</title>
+      <link>https://tactlabs.github.io/mlnotes/python/advanced/two/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/python/advanced/two/</guid>
+      <description>b = 2 b * b 4  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://tactii.com/test/test/</loc>
+    <loc>https://tactlabs.github.io/mlnotes/deep-learning/basic/abc/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/python/advanced/advanced/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/python/basic/basic/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/machine-learning/classification/classification/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/deep-learning/index.xml</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/machine-learning/classification/linear-model/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/machine-learning/index.xml</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/python/basics/one/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/index.xml</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/python/index.xml</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/machine-learning/regression/regression/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/three/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/python/advanced/two/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/deep-learning/advanced/xyz/</loc>
   </url>
-  
-  <url>
-    <loc>https://tactii.com/</loc>
-  </url>
-  
-  <url>
-    <loc>https://tactii.com/test/index.xml</loc>
-  </url>
-  
 </urlset>
