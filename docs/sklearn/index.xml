@@ -36,5 +36,14 @@
       <description>from sklearn.naive_bayes import GaussianNB import numpy as np #assigning predictor and target variables x= np.array([[-3,7],[1,5], [1,2], [-2,0], [2,3], [-4,0], [-1,1], [1,1], [-2,2], [2,7], [-4,1], [-2,7]]) y = np.array([3, 3, 3, 3, 4, 3, 3, 4, 3, 4, 4, 4]) #Create a Gaussian Classifier model = GaussianNB() # Train the model using the training sets  model.fit(x, y) GaussianNB()  #Predict Output  predicted= model.predict([[1,2],[3,4]]) print(predicted) [3 4]  </description>
     </item>
     
+    <item>
+      <title>gaussian-breast-cancer-prediction</title>
+      <link>https://tactlabs.github.io/mlnotes/sklearn/gaussian-breast-cancer-prediction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/sklearn/gaussian-breast-cancer-prediction/</guid>
+      <description>from sklearn.datasets import load_breast_cancer from sklearn.model_selection import train_test_split from sklearn.naive_bayes import GaussianNB from sklearn.metrics import accuracy_score # Load dataset data = load_breast_cancer() type(data) sklearn.utils.Bunch  # Organize our data label_names = data[&amp;#39;target_names&amp;#39;] labels = data[&amp;#39;target&amp;#39;] feature_names = data[&amp;#39;feature_names&amp;#39;] features = data[&amp;#39;data&amp;#39;] features array([[1.799e+01, 1.038e+01, 1.228e+02, ..., 2.654e-01, 4.601e-01, 1.189e-01], [2.057e+01, 1.777e+01, 1.329e+02, ..., 1.860e-01, 2.750e-01, 8.902e-02], [1.969e+01, 2.125e+01, 1.300e+02, ..., 2.430e-01, 3.613e-01, 8.758e-02], ..., [1.660e+01, 2.808e+01, 1.083e+02, ..., 1.418e-01, 2.218e-01, 7.</description>
+    </item>
+    
   </channel>
 </rss>
