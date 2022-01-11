@@ -47,5 +47,54 @@
       <description>import pandas as pd data = { &amp;#39;city&amp;#39; : [&amp;#39;Toronto&amp;#39;, &amp;#39;Montreal&amp;#39;, &amp;#39;Waterloo&amp;#39;, &amp;#39;Toronto&amp;#39;, &amp;#39;Waterloo&amp;#39;, &amp;#39;Toronto&amp;#39;, &amp;#39;Toronto&amp;#39;], &amp;#39;points&amp;#39; : [80, 70, 90, 85, 79, 82, 200] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;, &#39;Toronto&#39;, &#39;Waterloo&#39;, &#39;Toronto&#39;, &#39;Toronto&#39;], &#39;points&#39;: [80, 70, 90, 85, 79, 82, 200]}  type(data) dict  df = pd.DataFrame(data) df.groupby(&amp;#39;city&amp;#39;)[&amp;#39;points&amp;#39;].apply(lambda x:x.rolling(window=1).mean()) 0 80.0 1 70.0 2 90.0 3 85.0 4 79.0 5 82.0 6 200.0 Name: points, dtype: float64  df.</description>
     </item>
     
+    <item>
+      <title>astype-2</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/astype-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/astype-2/</guid>
+      <description>import numpy as np import pandas as pd marks = [ [90, 87], [90, 95], [92, 95] ] marks [[90, 87], [90, 95], [92, 95]]  df = pd.DataFrame(marks, columns=[&amp;#39;maths&amp;#39;, &amp;#39;science&amp;#39;]) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  maths science     0 90 87   1 90 95   2 92 95     # reassign some values to nan df[&amp;#39;maths&amp;#39;] 0 90 1 90 2 92 Name: maths, dtype: int64  df[&amp;#39;maths&amp;#39;][0] = np.</description>
+    </item>
+    
+    <item>
+      <title>categorial-to-numerical</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/categorial-to-numerical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/categorial-to-numerical/</guid>
+      <description>import numpy as np import pandas as pd data = { &amp;#39;sam&amp;#39; : [&amp;#39;archery&amp;#39;, &amp;#39;badminton&amp;#39;, &amp;#39;athletics&amp;#39;, &amp;#39;cycling_road&amp;#39;, &amp;#39;canoe_sprint&amp;#39;, &amp;#39;boxing&amp;#39;], &amp;#39;medal&amp;#39; : [&amp;#39;gold&amp;#39;, &amp;#39;silver&amp;#39;, &amp;#39;bronze&amp;#39;, &amp;#39;gold&amp;#39;, &amp;#39;gold&amp;#39;, &amp;#39;silver&amp;#39;] } df = pd.DataFrame(data) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  sam medal     0 archery gold   1 badminton silver   2 athletics bronze   3 cycling_road gold   4 canoe_sprint gold   5 boxing silver     def get_medal_points(medal): if(medal == &amp;#39;gold&amp;#39;): return 10 if(medal == &amp;#39;silver&amp;#39;): return 5 if(medal == &amp;#39;bronze&amp;#39;): return 1 return 0 df[&amp;#39;medal_points&amp;#39;] = df[&amp;#39;medal&amp;#39;].</description>
+    </item>
+    
+    <item>
+      <title>change-column-based-on-other-column</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/change-column-based-on-other-column/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/change-column-based-on-other-column/</guid>
+      <description>import numpy as np import pandas as pd df = pd.read_csv(&amp;#39;marks.csv&amp;#39;) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  student language science maths history     0 kumar 90 56 34 34   1 kevin 10 34 32 67   2 sammy 90 23 12 32   3 janice 20 67 90 45   4 peter 30 56 45 65   5 prem 90 45 45 34   6 carrol 50 90 45 23     # Whoever got more than 40 marks in Maths, we will double their marks df.</description>
+    </item>
+    
+    <item>
+      <title>check-data-types</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/check-data-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/check-data-types/</guid>
+      <description>import numpy as np import pandas as pd df = pd.read_csv(&amp;#34;/Users/tact/datasets/sales_data_types.csv&amp;#34;) --------------------------------------------------------------------------- FileNotFoundError Traceback (most recent call last) /tmp/ipykernel_6675/3459486513.py in &amp;lt;module&amp;gt; ----&amp;gt; 1 df = pd.read_csv(&amp;quot;/Users/tact/datasets/sales_data_types.csv&amp;quot;) ~/miniconda3/envs/py38/lib/python3.8/site-packages/pandas/io/parsers.py in parser_f(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, dialect, error_bad_lines, warn_bad_lines, delim_whitespace, low_memory, memory_map, float_precision) 674 ) 675 --&amp;gt; 676 return _read(filepath_or_buffer, kwds) 677 678 parser_f.</description>
+    </item>
+    
+    <item>
+      <title>csv-to-dataframe</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/csv-to-dataframe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/csv-to-dataframe/</guid>
+      <description>import numpy as np import pandas as pd csv = pd.DataFrame.read_csv(&amp;#39;uk-500.csv&amp;#39;) --------------------------------------------------------------------------- AttributeError Traceback (most recent call last) /tmp/ipykernel_5582/2603767424.py in &amp;lt;module&amp;gt; ----&amp;gt; 1 csv = pd.DataFrame.read_csv(&#39;uk-500.csv&#39;) AttributeError: type object &#39;DataFrame&#39; has no attribute &#39;read_csv&#39;  csv = pd.read_csv(&amp;#39;uk-500.csv&amp;#39;) csv.head()  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  first_name last_name company_name address city county postal phone1 phone2 email web     0 Aleshia Tomkiewicz Alan D Rosenburg Cpa Pc 14 Taylor St St.</description>
+    </item>
+    
   </channel>
 </rss>
