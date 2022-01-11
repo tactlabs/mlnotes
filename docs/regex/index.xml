@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>compile-expression</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/compile-expression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/compile-expression/</guid>
+      <description>import re# precompile regex patterns regex_entries = [ re.compile(p) for p in [&amp;#39;awesome&amp;#39;, &amp;#39;ocean&amp;#39;] ]content = &amp;#39;Duckduck go is awesome and it is getting better everyday&amp;#39; print(&amp;#39;Text : {!r}&amp;#39;.format(content)) Text : &#39;Duckduck go is awesome and it is getting better everyday&#39;  for regex in regex_entries: print(&amp;#39;Finding {} -&amp;gt; &amp;#39;.format(regex.pattern), end = &amp;#39; &amp;#39;) if(regex.search(content)): print(&amp;#39;matched&amp;#39;) else: print(&amp;#39;not matched&amp;#39;) Finding awesome -&amp;gt; matched Finding ocean -&amp;gt; not matched  </description>
+    </item>
+    
+    <item>
       <title>test</title>
       <link>https://tactlabs.github.io/mlnotes/regex/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
