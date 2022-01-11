@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TactLabs</title>
@@ -15,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tactlabs.github.io/mlnotes/sklearn/accuracy-score/</guid>
-      <description>import numpy as np from sklearn.metrics import accuracy_score y_pred = [0, 2, 1, 3] y_true = [0, 1, 2, 3] score1 = accuracy_score(y_true, y_pred) print(score1) 0.5  score2 = accuracy_score(y_true, y_pred, normalize=False) print(score2) 2  </description>
+      <description>import numpy as np from sklearn.metrics import accuracy_scorey_pred = [0, 2, 1, 3] y_true = [0, 1, 2, 3] score1 = accuracy_score(y_true, y_pred) print(score1) 0.5  score2 = accuracy_score(y_true, y_pred, normalize=False) print(score2) 2  </description>
     </item>
     
     <item>
@@ -24,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tactlabs.github.io/mlnotes/sklearn/decision-tree-graph/</guid>
-      <description>import pydotplus from sklearn.datasets import load_iris from sklearn import tree import collections # Data Collection #heigh, length of hair, voice pitch X = [ [180, 15,0], [177, 42,0], [136, 35,1], [174, 65,0], [141, 28,1]] Y = [&amp;#39;man&amp;#39;, &amp;#39;woman&amp;#39;, &amp;#39;woman&amp;#39;, &amp;#39;man&amp;#39;, &amp;#39;woman&amp;#39;] data_feature_names = [ &amp;#39;height&amp;#39;, &amp;#39;hair length&amp;#39;, &amp;#39;voice pitch&amp;#39; ] print(data_feature_names) [&#39;height&#39;, &#39;hair length&#39;, &#39;voice pitch&#39;]  # Training clf = tree.DecisionTreeClassifier() clf = clf.fit(X,Y) # Visualize data dot_data = tree.</description>
+      <description>import pydotplus from sklearn.datasets import load_iris from sklearn import tree import collections# Data Collection #heigh, length of hair, voice pitch X = [ [180, 15,0], [177, 42,0], [136, 35,1], [174, 65,0], [141, 28,1]]Y = [&amp;#39;man&amp;#39;, &amp;#39;woman&amp;#39;, &amp;#39;woman&amp;#39;, &amp;#39;man&amp;#39;, &amp;#39;woman&amp;#39;] data_feature_names = [ &amp;#39;height&amp;#39;, &amp;#39;hair length&amp;#39;, &amp;#39;voice pitch&amp;#39; ]print(data_feature_names) [&#39;height&#39;, &#39;hair length&#39;, &#39;voice pitch&#39;]  # Training clf = tree.DecisionTreeClassifier() clf = clf.fit(X,Y)# Visualize data dot_data = tree.export_graphviz(clf, feature_names=data_feature_names, out_file=None, filled=True, rounded=True) graph = pydotplus.</description>
     </item>
     
     <item>
@@ -33,7 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tactlabs.github.io/mlnotes/sklearn/gaussian/</guid>
-      <description>from sklearn.naive_bayes import GaussianNB import numpy as np #assigning predictor and target variables x= np.array([[-3,7],[1,5], [1,2], [-2,0], [2,3], [-4,0], [-1,1], [1,1], [-2,2], [2,7], [-4,1], [-2,7]]) y = np.array([3, 3, 3, 3, 4, 3, 3, 4, 3, 4, 4, 4]) #Create a Gaussian Classifier model = GaussianNB() # Train the model using the training sets  model.fit(x, y) GaussianNB()  #Predict Output  predicted= model.predict([[1,2],[3,4]]) print(predicted) [3 4]  </description>
+      <description>from sklearn.naive_bayes import GaussianNB import numpy as np#assigning predictor and target variables x= np.array([[-3,7],[1,5], [1,2], [-2,0], [2,3], [-4,0], [-1,1], [1,1], [-2,2], [2,7], [-4,1], [-2,7]]) y = np.array([3, 3, 3, 3, 4, 3, 3, 4, 3, 4, 4, 4])#Create a Gaussian Classifier model = GaussianNB()# Train the model using the training sets  model.fit(x, y) GaussianNB()  #Predict Output  predicted= model.predict([[1,2],[3,4]]) print(predicted) [3 4]  </description>
     </item>
     
     <item>
@@ -42,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tactlabs.github.io/mlnotes/sklearn/gaussian-breast-cancer-prediction/</guid>
-      <description>from sklearn.datasets import load_breast_cancer from sklearn.model_selection import train_test_split from sklearn.naive_bayes import GaussianNB from sklearn.metrics import accuracy_score # Load dataset data = load_breast_cancer() type(data) sklearn.utils.Bunch  # Organize our data label_names = data[&amp;#39;target_names&amp;#39;] labels = data[&amp;#39;target&amp;#39;] feature_names = data[&amp;#39;feature_names&amp;#39;] features = data[&amp;#39;data&amp;#39;] features array([[1.799e+01, 1.038e+01, 1.228e+02, ..., 2.654e-01, 4.601e-01, 1.189e-01], [2.057e+01, 1.777e+01, 1.329e+02, ..., 1.860e-01, 2.750e-01, 8.902e-02], [1.969e+01, 2.125e+01, 1.300e+02, ..., 2.430e-01, 3.613e-01, 8.758e-02], ..., [1.660e+01, 2.808e+01, 1.083e+02, ..., 1.418e-01, 2.218e-01, 7.</description>
+      <description>from sklearn.datasets import load_breast_cancer from sklearn.model_selection import train_test_split from sklearn.naive_bayes import GaussianNB from sklearn.metrics import accuracy_score# Load dataset data = load_breast_cancer()type(data) sklearn.utils.Bunch  # Organize our data label_names = data[&amp;#39;target_names&amp;#39;] labels = data[&amp;#39;target&amp;#39;] feature_names = data[&amp;#39;feature_names&amp;#39;] features = data[&amp;#39;data&amp;#39;]features array([[1.799e+01, 1.038e+01, 1.228e+02, ..., 2.654e-01, 4.601e-01, 1.189e-01], [2.057e+01, 1.777e+01, 1.329e+02, ..., 1.860e-01, 2.750e-01, 8.902e-02], [1.969e+01, 2.125e+01, 1.300e+02, ..., 2.430e-01, 3.613e-01, 8.758e-02], ..., [1.660e+01, 2.808e+01, 1.083e+02, ..., 1.418e-01, 2.218e-01, 7.820e-02], [2.060e+01, 2.933e+01, 1.</description>
     </item>
     
   </channel>
