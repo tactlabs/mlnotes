@@ -30,5 +30,10 @@ for name in names:
 
 
 ```python
-
+# \d - digit
+# \D - non-digit
+# \s - whitespace
+# \S - non-whitespace
+# \w - alphanumeric
+# \W - non-alphanumeric
 ```

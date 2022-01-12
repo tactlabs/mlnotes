@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Ontario-postal-code</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/ontario-postal-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/ontario-postal-code/</guid>
+      <description>import renames = [&amp;#39;M2N1H5&amp;#39;, &amp;#39;M2N 1H5&amp;#39;, &amp;#39;M882J8&amp;#39;] regex_patten = &amp;#34;^[A-Z]\d[A-Z]\s*\d[A-Z]\d&amp;#34; # starts with Capital letter; it can have zero or one space for name in names: m = re.match(regex_patten, name) if(m): #print(m.groups()) print(&amp;#39;matched : &amp;#39;, name) matched : M2N1H5 matched : M2N 1H5  </description>
+    </item>
+    
+    <item>
       <title>abc</title>
       <link>https://tactlabs.github.io/mlnotes/deep-learning/basic/abc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
