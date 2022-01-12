@@ -8,6 +8,10 @@
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/find-all/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/index.xml</loc>
     <priority>0</priority>
   </url>
@@ -44,6 +48,10 @@
   <url>
     <loc>https://tactlabs.github.io/mlnotes/template/index.xml</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/untitled/</loc>
   </url>
   
   <url>
