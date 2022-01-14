@@ -12,6 +12,18 @@
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/find-multiple-whitespace/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/find-two-digits-with-spaces/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/get-full-matches/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/index.xml</loc>
     <priority>0</priority>
   </url>
@@ -26,13 +38,25 @@
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/phone-number-search/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/python/index.xml</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/regex-groups/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/regex/index.xml</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/remove-numbers/</loc>
   </url>
   
   <url>

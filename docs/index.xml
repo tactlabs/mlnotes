@@ -20,12 +20,66 @@
     </item>
     
     <item>
+      <title>Find-multiple-whitespace</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/find-multiple-whitespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/find-multiple-whitespace/</guid>
+      <description>import rehelp(re.split) Help on function split in module re: split(pattern, string, maxsplit=0, flags=0) Split the source string by the occurrences of the pattern, returning a list containing the resulting substrings. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list.</description>
+    </item>
+    
+    <item>
+      <title>Find-two-digits-with-spaces</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/find-two-digits-with-spaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/find-two-digits-with-spaces/</guid>
+      <description>import retext = &amp;#34;It happened on Feb 21 at 3:30&amp;#34; answer= re.findall(r&amp;#39;\b\d{2}\b&amp;#39;, text) print(answer) [&#39;21&#39;, &#39;30&#39;]  # To match only two digits with spaces answers = re.findall(r&amp;#39;\s\d{2}\s&amp;#39;, text)for a in answers: print(a.strip()) 21  # To do # Find 3:30 or 3.30 or 3-30 alone</description>
+    </item>
+    
+    <item>
+      <title>Get-full-matches</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/get-full-matches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/get-full-matches/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ontario-postal-code</title>
       <link>https://tactlabs.github.io/mlnotes/regex/ontario-postal-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tactlabs.github.io/mlnotes/regex/ontario-postal-code/</guid>
       <description>import renames = [&amp;#39;M2N1H5&amp;#39;, &amp;#39;M2N 1H5&amp;#39;, &amp;#39;M882J8&amp;#39;] regex_patten = &amp;#34;^[A-Z]\d[A-Z]\s*\d[A-Z]\d&amp;#34; # starts with Capital letter; it can have zero or one space for name in names: m = re.match(regex_patten, name) if(m): #print(m.groups()) print(&amp;#39;matched : &amp;#39;, name) matched : M2N1H5 matched : M2N 1H5  # \d - digit # \D - non-digit # \s - whitespace # \S - non-whitespace # \w - alphanumeric # \W - non-alphanumeric</description>
+    </item>
+    
+    <item>
+      <title>Phone-number-search</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/phone-number-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/phone-number-search/</guid>
+      <description>import refh = open(&amp;#34;sample_phone_book.txt&amp;#34;) for line in fh: if re.search(r&amp;#34;J.*Neu&amp;#34;,line): print(line.rstrip()) if re.search(r&amp;#34;a*Neu&amp;#34;,line): print(line.rstrip()) fh.</description>
+    </item>
+    
+    <item>
+      <title>Regex-groups</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/regex-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/regex-groups/</guid>
+      <description>import renames = [&amp;#39;A2B8&amp;#39;] for name in names: m = re.match(&amp;#34;^[A-Z]\d[A-Z]\d&amp;#34;, name) if(m): print(m.groups()) print(&amp;#39;matched : &amp;#39;, name) () matched : A2B8  </description>
+    </item>
+    
+    <item>
+      <title>Remove-numbers</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/remove-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/remove-numbers/</guid>
+      <description>content = &amp;#39;15. TFRecord in Tensorflow&amp;#39;content &#39;15. TFRecord in Tensorflow&#39;  import reresult = re.sub(r&amp;#39;\d+\.&amp;#39;, &amp;#39;&amp;#39;, content)result.strip() &#39;TFRecord in Tensorflow&#39;  content2 = &amp;#34;&amp;#34;&amp;#34;1. Cross Entropy Loss Derivation 2. How to split a tensorflow model into two parts? 3. RNN Text Generation with Eager Execution 4. Softmax activation in Tensor&amp;#34;&amp;#34;&amp;#34;content2 &#39;1. Cross Entropy Loss Derivation\n\n2. How to split a tensorflow model into two parts?\n\n3. RNN Text Generation with Eager Execution\n\n4. Softmax activation in Tensor&#39;  result2 = re.</description>
     </item>
     
     <item>

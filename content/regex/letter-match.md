@@ -1,0 +1,44 @@
+---
+title: "letter-match"
+author: "Altair"
+type: article
+draft: false
+--- 
+
+```python
+import re
+```
+
+
+```python
+contents = [
+    "AB23",
+    "A2B3", 
+    "DE09",
+    "MN90",
+    "XYi9",
+    "XY90"
+]
+```
+
+
+```python
+for content in contents:
+    regex_pattern = "(?:AB|DE|XY)\d+" 
+    # starts with AB or DE; should contain one or more number
+
+    m = re.match(regex_pattern, content)
+
+    if(m):
+        print('matched : '+content)
+```
+
+    matched : AB23
+    matched : DE09
+    matched : XY90
+
+
+
+```python
+
+```
