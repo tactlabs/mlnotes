@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta property="og:title" content="add-a-new-column" />
-<meta property="og:description" content="import pandas as pd data = { &#39;city&#39; : [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39; : [80, 70, 90] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39;: [80, 70, 90]}  type(data) dict  df = pd.DataFrame(data) df = df.assign(code = [1, 2, 3]) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+<meta property="og:description" content="import pandas as pd data = { &#39;city&#39; : [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39; : [80, 70, 90] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39;: [80, 70, 90]}  type(data) dict  df = pd.DataFrame(data) df = df.assign(code = [1, 2 , 3]) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
   city points code     0 Toronto 80 1   1 Montreal 70 2   2 Waterloo 90 3     " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/add-a-new-column/" />
@@ -28,7 +28,7 @@
 <meta name="twitter:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
 
 <meta name="twitter:title" content="add-a-new-column"/>
-<meta name="twitter:description" content="import pandas as pd data = { &#39;city&#39; : [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39; : [80, 70, 90] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39;: [80, 70, 90]}  type(data) dict  df = pd.DataFrame(data) df = df.assign(code = [1, 2, 3]) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+<meta name="twitter:description" content="import pandas as pd data = { &#39;city&#39; : [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39; : [80, 70, 90] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39;: [80, 70, 90]}  type(data) dict  df = pd.DataFrame(data) df = df.assign(code = [1, 2 , 3]) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
   city points code     0 Toronto 80 1   1 Montreal 70 2   2 Waterloo 90 3     "/>
 
     
@@ -38,7 +38,7 @@
   "@type": "BlogPosting",
   "headline": "add-a-new-column",
   "url": "https:\/\/tactlabs.github.io\/mlnotes\/pandas\/add-a-new-column\/",
-  "wordCount": "78",
+  "wordCount": "79",
   "datePublished": "0001-01-01T00:00:00\x2b00:00",
   "author": {
     "@type": "Person",
@@ -134,7 +134,7 @@
 </code></pre></div><pre><code>dict
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">code</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">code</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 </code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
@@ -181,7 +181,10 @@
   </tbody>
 </table>
 </div>
-
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+</code></pre></div>
   </div>
   
       </div>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66582-32"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-66582-32');
+    </script>
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="fill-random-marks" />
+<meta property="og:description" content="import numpy as np import pandas as pd datatype = [(&#39;Science&#39;, &#39;int32&#39;), (&#39;Maths&#39;, &#39;int32&#39;)] current_values = np.zeros(3, dtype=datatype) current_index = [&#39;Row &#39;&#43;str(i) for i in range(1, 4)] df = pd.DataFrame(current_values, index=current_index) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  Science Maths     Row 1 0 0   Row 2 0 0   Row 3 0 0     df[&#39;Science&#39;] Row 1 0 Row 2 0 Row 3 0 Name: Science, dtype: int32  df[&#39;Science&#39;][0] = 45 df[&#39;Maths&#39;][1] = 100 df  ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/fill-random-marks/" />
+<meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
+
+<meta name="twitter:title" content="fill-random-marks"/>
+<meta name="twitter:description" content="import numpy as np import pandas as pd datatype = [(&#39;Science&#39;, &#39;int32&#39;), (&#39;Maths&#39;, &#39;int32&#39;)] current_values = np.zeros(3, dtype=datatype) current_index = [&#39;Row &#39;&#43;str(i) for i in range(1, 4)] df = pd.DataFrame(current_values, index=current_index) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  Science Maths     Row 1 0 0   Row 2 0 0   Row 3 0 0     df[&#39;Science&#39;] Row 1 0 Row 2 0 Row 3 0 Name: Science, dtype: int32  df[&#39;Science&#39;][0] = 45 df[&#39;Maths&#39;][1] = 100 df  ."/>
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "fill-random-marks",
+  "url": "https:\/\/tactlabs.github.io\/mlnotes\/pandas\/fill-random-marks\/",
+  "wordCount": "130",
+  "datePublished": "0001-01-01T00:00:00\x2b00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Altair"
+  }
+}
+</script>
+
+
+
+    <title>Tact Machine Learning Notes</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    
+    <link href="https://tactlabs.github.io/mlnotes/css/custom.css" rel="stylesheet"> 
+    <link href="https://tactlabs.github.io/mlnotes/css/syntax.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    
+    
+
+    
+    <link href="https://tactlabs.github.io/mlnotes//articles/index.xml" rel="alternate" type="application/rss+xml" title="TactLabs Articles" />
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://tactlabs.github.io/mlnotes/">Tact</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                
+
+
+<article>
+  <div class="article">
+    
+    <header>
+      <h1 class="article-title">fill-random-marks</h1>
+    </header>
+    <div class="content">
+    <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">datatype</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;Science&#39;</span><span class="p">,</span> <span class="s1">&#39;int32&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Maths&#39;</span><span class="p">,</span> <span class="s1">&#39;int32&#39;</span><span class="p">)]</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">current_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">datatype</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">current_index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Row &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">current_values</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">current_index</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+</code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Science</th>
+      <th>Maths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Row 1</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Row 2</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Row 3</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Science&#39;</span><span class="p">]</span>
+</code></pre></div><pre><code>Row 1    0
+Row 2    0
+Row 3    0
+Name: Science, dtype: int32
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Science&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">45</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Maths&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+</code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Science</th>
+      <th>Maths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Row 1</th>
+      <td>45</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Row 2</th>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Row 3</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</code></pre></div><pre><code>(3, 2)
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+</code></pre></div>
+  </div>
+  
+      </div>
+  </article>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <footer class="footer text-center">
+        <div class="container">
+            <span class="text-muted"><a href="https://github.com/tactlabs">GitHub</a>.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

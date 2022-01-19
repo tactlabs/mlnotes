@@ -137,7 +137,7 @@ df = df.astype('int') # this will throw error
 
     ValueError                                Traceback (most recent call last)
 
-    /tmp/ipykernel_21139/3439763043.py in <module>
+    /tmp/ipykernel_5492/3439763043.py in <module>
     ----> 1 df = df.astype('int') # this will throw error
     
 
@@ -183,11 +183,6 @@ df = df.astype('int') # this will throw error
 
     ValueError: Cannot convert non-finite values (NA or inf) to integer
 
-
-
-```python
-df = df.fillna(0).astype('int') # this will throw error
-```
 
 
 ```python
@@ -245,6 +240,11 @@ df
 </div>
 
 
+
+
+```python
+
+```
 
 
 ```python

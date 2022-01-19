@@ -63,6 +63,18 @@
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/custom-function-as-lambda/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/dataframe-with-random-data/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/datatype-downcasting/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/sklearn/decision-tree-graph/</loc>
   </url>
   
@@ -71,7 +83,51 @@
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/even-rows-and-3-columns/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/fill-na-with-average/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/fill-random-marks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/filter-between/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/filter-by-single-column/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/filter-with-query/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/filter-with-value-comparison/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/first-four-rows-csv/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/food-points/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/sklearn/gaussian/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/get-nth-row/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/group-by-date/</loc>
   </url>
   
   <url>

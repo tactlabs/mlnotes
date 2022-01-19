@@ -12,7 +12,7 @@ import pandas as pd
 
 
 ```python
-df = pd.read_csv("/Users/tact/datasets/sales_data_types.csv")
+df = pd.read_csv("/Users/snekha/datasets/sales_data_types.csv")
 ```
 
 

@@ -48,7 +48,7 @@ df = pd.DataFrame(data)
 
 
 ```python
-df = df.assign(code = [1, 2, 3])
+df = df.assign(code = [1, 2 , 3])
 ```
 
 
@@ -106,3 +106,18 @@ df
 </div>
 
 
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
