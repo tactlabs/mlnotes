@@ -1,181 +1,107 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://tactlabs.github.io/mlnotes/deep-learning/basic/abc/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/sklearn/accuracy-score/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/add-a-new-column/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/basics/add-padding-around-string/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/advanced-custom-lambda/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/basics/age-calculator/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/apply-custom-function/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/apply-function/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/astype-2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/basic/basic/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/categorial-to-numerical/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/change-column-based-on-other-column/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/check-data-types/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/classification/classification/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/csv-to-dataframe/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/custom-function-as-lambda/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/dataframe-with-random-data/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/datatype-downcasting/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/sklearn/decision-tree-graph/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/deep-learning/index.xml</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/even-rows-and-3-columns/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/fill-na-with-average/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/fill-random-marks/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/filter-between/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/filter-by-single-column/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/filter-with-query/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/filter-with-value-comparison/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/first-four-rows-csv/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/food-points/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/sklearn/gaussian/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/get-nth-row/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/group-by-date/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas-1/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas-2/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/index-isin/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/infer-objects/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/initialize-with-datatype/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/int-and-nan/</loc>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/classification/linear-model/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/index.xml</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/index.xml</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/index.xml</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/regression/regression/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/sklearn/index.xml</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/basics/snekha1/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/template/t/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/template/index.xml</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/advanced/two/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/deep-learning/advanced/xyz/</loc>
   </url>
-  
 </urlset>

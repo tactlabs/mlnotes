@@ -19,8 +19,9 @@
 <meta property="og:title" content="advanced-custom-lambda" />
 <meta property="og:description" content="import numpy as np import pandas as pd # Check the student passed either math or passed at least in 2 subjects. If no condidition matched, consider them as failed def pass_math_or_two_subjects(row): if(row.maths &gt; 34): return &#39;Pass&#39; if(row.language &gt; 34 and row.science &gt; 34): return &#39;Pass&#39; return &#39;Fail&#39; df = pd.read_csv(&#39;abc.csv&#39;) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/advanced-custom-lambda/" />
-<meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
+<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/advanced-custom-lambda/" /><meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/><meta property="article:section" content="pandas" />
+
+
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -37,7 +38,7 @@
   "headline": "advanced-custom-lambda",
   "url": "https:\/\/tactlabs.github.io\/mlnotes\/pandas\/advanced-custom-lambda\/",
   "wordCount": "285",
-  "datePublished": "0001-01-01T00:00:00\x2b00:00",
+  "datePublished": "0001-01-01T00:00:00\u002b00:00",
   "author": {
     "@type": "Person",
     "name": "Altair"
@@ -120,17 +121,17 @@
       <h1 class="article-title">advanced-custom-lambda</h1>
     </header>
     <div class="content">
-    <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Check the student passed either math or passed at least in 2 subjects. If no condidition matched, consider them as failed</span>
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Check the student passed either math or passed at least in 2 subjects. If no condidition matched, consider them as failed</span>
 <span class="k">def</span> <span class="nf">pass_math_or_two_subjects</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
     <span class="k">if</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">maths</span> <span class="o">&gt;</span> <span class="mi">34</span><span class="p">):</span>
         <span class="k">return</span> <span class="s1">&#39;Pass&#39;</span>
     <span class="k">if</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">language</span> <span class="o">&gt;</span> <span class="mi">34</span> <span class="ow">and</span> <span class="n">row</span><span class="o">.</span><span class="n">science</span> <span class="o">&gt;</span> <span class="mi">34</span><span class="p">):</span>
         <span class="k">return</span> <span class="s1">&#39;Pass&#39;</span>
     <span class="k">return</span> <span class="s1">&#39;Fail&#39;</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;abc.csv&#39;</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;abc.csv&#39;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -216,8 +217,8 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;special_result&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pass_math_or_two_subjects</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;special_result&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pass_math_or_two_subjects</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -311,9 +312,9 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Filter those candidates whoever passed the given criteria</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Filter those candidates whoever passed the given criteria</span>
 <span class="n">df_passed</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pass_math_or_two_subjects</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Pass&#39;</span><span class="p">]</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df_passed</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df_passed</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -389,7 +390,7 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
 </code></pre></div>
   </div>
   

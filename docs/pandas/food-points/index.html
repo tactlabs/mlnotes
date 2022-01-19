@@ -20,8 +20,9 @@
 <meta property="og:description" content="import numpy as np import pandas as pd data = { &#39;dinner&#39; : [&#39;chicken wrap&#39;, &#39;stake&#39;, &#39;rudy burger&#39;, &#39;sushi&#39;, &#39;chicken teriyaki&#39;, &#39;caesar salad&#39;] } df = pd.DataFrame(data) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
   dinner     0 chicken wrap   1 stake   2 rudy burger   3 sushi   4 chicken teriyaki   5 caesar salad     def get_food_points(food): if(&#39;chicken&#39; in food): return 2 if(&#39;stake&#39; in food): return 1 if(&#39;burger&#39; in food): return 1 if(&#39;salad&#39; in food): return 7 return None df[&#39;food_points&#39;] = df[&#39;dinner&#39;]." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/food-points/" />
-<meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
+<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/food-points/" /><meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/><meta property="article:section" content="pandas" />
+
+
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -39,7 +40,7 @@
   "headline": "food-points",
   "url": "https:\/\/tactlabs.github.io\/mlnotes\/pandas\/food-points\/",
   "wordCount": "143",
-  "datePublished": "0001-01-01T00:00:00\x2b00:00",
+  "datePublished": "0001-01-01T00:00:00\u002b00:00",
   "author": {
     "@type": "Person",
     "name": "Altair"
@@ -122,15 +123,15 @@
       <h1 class="article-title">food-points</h1>
     </header>
     <div class="content">
-    <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;dinner&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;chicken wrap&#39;</span><span class="p">,</span> <span class="s1">&#39;stake&#39;</span><span class="p">,</span> <span class="s1">&#39;rudy burger&#39;</span><span class="p">,</span> <span class="s1">&#39;sushi&#39;</span><span class="p">,</span> <span class="s1">&#39;chicken teriyaki&#39;</span><span class="p">,</span> <span class="s1">&#39;caesar salad&#39;</span><span class="p">]</span>
 <span class="p">}</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -180,7 +181,7 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_food_points</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_food_points</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
     <span class="k">if</span><span class="p">(</span><span class="s1">&#39;chicken&#39;</span> <span class="ow">in</span> <span class="n">food</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">2</span>
     
@@ -193,9 +194,9 @@
     <span class="k">if</span><span class="p">(</span><span class="s1">&#39;salad&#39;</span> <span class="ow">in</span> <span class="n">food</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">7</span>
     
-    <span class="k">return</span> <span class="bp">None</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;food_points&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;dinner&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_food_points</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+    <span class="k">return</span> <span class="kc">None</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;food_points&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;dinner&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_food_points</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -252,7 +253,7 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
 </code></pre></div>
   </div>
   

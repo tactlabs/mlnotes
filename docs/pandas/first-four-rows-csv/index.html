@@ -20,8 +20,9 @@
 <meta property="og:description" content="import numpy as np import pandas as pd df = pd.read_csv(&#39;data1.csv&#39;) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
   capacity score length     0 1 10 30   1 2 20 30   2 3 30 40   3 3 40 30   4 2 30 40   5 7 10 23   6 3 20 22   7 8 20 11   8 2 30 2     df." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/first-four-rows-csv/" />
-<meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
+<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/first-four-rows-csv/" /><meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/><meta property="article:section" content="pandas" />
+
+
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -39,7 +40,7 @@
   "headline": "first-four-rows-csv",
   "url": "https:\/\/tactlabs.github.io\/mlnotes\/pandas\/first-four-rows-csv\/",
   "wordCount": "173",
-  "datePublished": "0001-01-01T00:00:00\x2b00:00",
+  "datePublished": "0001-01-01T00:00:00\u002b00:00",
   "author": {
     "@type": "Person",
     "name": "Altair"
@@ -122,10 +123,10 @@
       <h1 class="article-title">first-four-rows-csv</h1>
     </header>
     <div class="content">
-    <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data1.csv&#39;</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data1.csv&#39;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -207,11 +208,11 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div><pre><code>(9, 3)
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">dfr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">dfr</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">dfr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">dfr</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -263,10 +264,10 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Get first four columns and 2 columns</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Get first four columns and 2 columns</span>
 
 <span class="n">dfr2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">,</span> <span class="p">:</span><span class="mi">2</span><span class="p">]</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">dfr2</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">dfr2</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -313,7 +314,7 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
 </code></pre></div>
   </div>
   

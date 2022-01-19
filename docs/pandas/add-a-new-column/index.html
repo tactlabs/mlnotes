@@ -20,8 +20,9 @@
 <meta property="og:description" content="import pandas as pd data = { &#39;city&#39; : [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39; : [80, 70, 90] } data {&#39;city&#39;: [&#39;Toronto&#39;, &#39;Montreal&#39;, &#39;Waterloo&#39;], &#39;points&#39;: [80, 70, 90]}  type(data) dict  df = pd.DataFrame(data) df = df.assign(code = [1, 2 , 3]) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
   city points code     0 Toronto 80 1   1 Montreal 70 2   2 Waterloo 90 3     " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/add-a-new-column/" />
-<meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
+<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/add-a-new-column/" /><meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/><meta property="article:section" content="pandas" />
+
+
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -39,7 +40,7 @@
   "headline": "add-a-new-column",
   "url": "https:\/\/tactlabs.github.io\/mlnotes\/pandas\/add-a-new-column\/",
   "wordCount": "79",
-  "datePublished": "0001-01-01T00:00:00\x2b00:00",
+  "datePublished": "0001-01-01T00:00:00\u002b00:00",
   "author": {
     "@type": "Person",
     "name": "Altair"
@@ -122,20 +123,20 @@
       <h1 class="article-title">add-a-new-column</h1>
     </header>
     <div class="content">
-    <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;city&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Toronto&#39;</span><span class="p">,</span> <span class="s1">&#39;Montreal&#39;</span><span class="p">,</span> <span class="s1">&#39;Waterloo&#39;</span><span class="p">],</span>
     <span class="s1">&#39;points&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">80</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">90</span><span class="p">]</span>
 <span class="p">}</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span>
 </code></pre></div><pre><code>{'city': ['Toronto', 'Montreal', 'Waterloo'], 'points': [80, 70, 90]}
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </code></pre></div><pre><code>dict
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">code</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">code</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -181,9 +182,9 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
 </code></pre></div>
   </div>
   

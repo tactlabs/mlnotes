@@ -20,8 +20,9 @@
 <meta property="og:description" content="import numpy as np import pandas as pd def apply_math_special(row): return (row.maths *2 &#43; (row.language/2) &#43; (row.history/3) &#43; (row.science/4)) df = pd.read_csv(&#39;abc.csv&#39;) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
   student language science maths history     0 kumar 90 56 34 34   1 kevin 10 34 32 67   2 sammy 90 23 12 32   3 janice 20 67 90 45   4 peter 30 56 45 65   5 prem 90 45 45 34   6 carrol 50 90 45 23     df[&#39;math_special&#39;] = df." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/custom-function-as-lambda/" />
-<meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
+<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/custom-function-as-lambda/" /><meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/><meta property="article:section" content="pandas" />
+
+
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -39,7 +40,7 @@
   "headline": "custom-function-as-lambda",
   "url": "https:\/\/tactlabs.github.io\/mlnotes\/pandas\/custom-function-as-lambda\/",
   "wordCount": "237",
-  "datePublished": "0001-01-01T00:00:00\x2b00:00",
+  "datePublished": "0001-01-01T00:00:00\u002b00:00",
   "author": {
     "@type": "Person",
     "name": "Altair"
@@ -122,12 +123,12 @@
       <h1 class="article-title">custom-function-as-lambda</h1>
     </header>
     <div class="content">
-    <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">apply_math_special</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">apply_math_special</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">maths</span> <span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">language</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">history</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">science</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;abc.csv&#39;</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;abc.csv&#39;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -213,8 +214,8 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;math_special&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">apply_math_special</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;math_special&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">apply_math_special</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -308,11 +309,11 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="s1">&#39;&#39;&#39;What did we do?
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="s1">&#39;&#39;&#39;What did we do?
 </span><span class="s1">We just doubled the math marks and reduced the marks of other subjects by 2, 3, 4 and then assigned the new value as a new column&#39;&#39;&#39;</span>
 </code></pre></div><pre><code>'What did we do?\nWe just doubled the math marks and reduced the marks of other subjects by 2, 3, 4 and then assigned the new value as a new column'
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
 </code></pre></div>
   </div>
   

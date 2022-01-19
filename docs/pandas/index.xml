@@ -233,5 +233,75 @@
       <description>from datetime import datetime import pandas as pd data = { &amp;#39;date&amp;#39; : [ &amp;#39;2019-05-01 19:47:05.069722&amp;#39;, &amp;#39;2019-05-02 17:47:05.069722&amp;#39;, &amp;#39;2019-05-02 19:47:05.069722&amp;#39;, &amp;#39;2019-05-03 18:47:05.069722&amp;#39;, &amp;#39;2019-05-03 19:47:05.069722&amp;#39;, ], &amp;#39;spent&amp;#39; : [ 13, 13, 11, 15, 10 ] } data {&#39;date&#39;: [&#39;2019-05-01 19:47:05.069722&#39;, &#39;2019-05-02 17:47:05.069722&#39;, &#39;2019-05-02 19:47:05.069722&#39;, &#39;2019-05-03 18:47:05.069722&#39;, &#39;2019-05-03 19:47:05.069722&#39;], &#39;spent&#39;: [13, 13, 11, 15, 10]}  df = pd.DataFrame(data) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .</description>
     </item>
     
+    <item>
+      <title>if-else-pandas</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas/</guid>
+      <description>import numpy as np import pandas as pd df = pd.DataFrame({ &amp;#39;maths&amp;#39; : [80, 89, 90, 20], &amp;#39;science&amp;#39; : [40, 50, 90, 100], &amp;#39;language&amp;#39; : [20, 30, 90, 95] }) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  maths science language     0 80 40 20   1 89 50 30   2 90 90 90   3 20 100 95     df[&amp;#39;masc_pass&amp;#39;] = np.</description>
+    </item>
+    
+    <item>
+      <title>if-else-pandas-1</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas-1/</guid>
+      <description>import numpy as np import pandas as pd df = pd.DataFrame({ &amp;#39;maths&amp;#39; : [80, 89, 90, 20], &amp;#39;science&amp;#39; : [40, 50, 90, 100], &amp;#39;language&amp;#39; : [20, 30, 90, 95] }) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  maths science language     0 80 40 20   1 89 50 30   2 90 90 90   3 20 100 95     df.</description>
+    </item>
+    
+    <item>
+      <title>if-else-pandas-2</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas-2/</guid>
+      <description>import numpy as np import pandas as pd df = pd.DataFrame({ &amp;#39;maths&amp;#39; : [80, 89, 90, 20], &amp;#39;science&amp;#39; : [40, 50, 90, 100], &amp;#39;language&amp;#39; : [20, 30, 90, 95] }) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  maths science language     0 80 40 20   1 89 50 30   2 90 90 90   3 20 100 95     df_maths = df[df.</description>
+    </item>
+    
+    <item>
+      <title>index-isin</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/index-isin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/index-isin/</guid>
+      <description>import numpy as np import pandas as pd df = pd.DataFrame({ &amp;#39;maths&amp;#39; : [80, 89, 90, 20, 60], &amp;#39;science&amp;#39; : [40, 50, 90, 100, 50], &amp;#39;language&amp;#39; : [20, 30, 90, 95, 40] }) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  maths science language     0 80 40 20   1 89 50 30   2 90 90 90   3 20 100 95   4 60 50 40     df[df.</description>
+    </item>
+    
+    <item>
+      <title>infer-objects</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/infer-objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/infer-objects/</guid>
+      <description>import numpy as np import pandas as pd df = pd.DataFrame({&amp;#39;a&amp;#39;: [7, 1, 5], &amp;#39;b&amp;#39;: [&amp;#39;3&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;1&amp;#39;]}, dtype=&amp;#39;object&amp;#39;) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  a b     0 7 3   1 1 2   2 5 1     df.dtypes a object b object dtype: object  df = df.</description>
+    </item>
+    
+    <item>
+      <title>initialize-with-datatype</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/initialize-with-datatype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/initialize-with-datatype/</guid>
+      <description>import numpy as np import pandas as pd df = pd.DataFrame({&amp;#39;a&amp;#39;: [7, 1, 5], &amp;#39;b&amp;#39;: [&amp;#39;3&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;1&amp;#39;]}, dtype=&amp;#39;object&amp;#39;) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  a b     0 7 3   1 1 2   2 5 1     df.dtypes a object b object dtype: object  # Let&amp;#39;s set the datatype as integer df1 = pd.</description>
+    </item>
+    
+    <item>
+      <title>int-and-nan</title>
+      <link>https://tactlabs.github.io/mlnotes/pandas/int-and-nan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/pandas/int-and-nan/</guid>
+      <description>import numpy as np import pandas as pd df = pd.DataFrame({ &amp;#39;one&amp;#39;: [4, 5], &amp;#39;two&amp;#39;: [10, 20] }) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
+  one two     0 4 10   1 5 20     df[&amp;#39;one&amp;#39;]+2 0 6 1 7 Name: one, dtype: int64  df[&amp;#39;one&amp;#39;][0] 4  df[&amp;#39;one&amp;#39;][0] = np.</description>
+    </item>
+    
   </channel>
 </rss>

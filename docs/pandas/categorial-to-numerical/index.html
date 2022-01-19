@@ -20,8 +20,9 @@
 <meta property="og:description" content="import numpy as np import pandas as pd data = { &#39;sam&#39; : [&#39;archery&#39;, &#39;badminton&#39;, &#39;athletics&#39;, &#39;cycling_road&#39;, &#39;canoe_sprint&#39;, &#39;boxing&#39;], &#39;medal&#39; : [&#39;gold&#39;, &#39;silver&#39;, &#39;bronze&#39;, &#39;gold&#39;, &#39;gold&#39;, &#39;silver&#39;] } df = pd.DataFrame(data) df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }  
   sam medal     0 archery gold   1 badminton silver   2 athletics bronze   3 cycling_road gold   4 canoe_sprint gold   5 boxing silver     def get_medal_points(medal): if(medal == &#39;gold&#39;): return 10 if(medal == &#39;silver&#39;): return 5 if(medal == &#39;bronze&#39;): return 1 return 0 df[&#39;medal_points&#39;] = df[&#39;medal&#39;]." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/categorial-to-numerical/" />
-<meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
+<meta property="og:url" content="https://tactlabs.github.io/mlnotes/pandas/categorial-to-numerical/" /><meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/><meta property="article:section" content="pandas" />
+
+
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -39,7 +40,7 @@
   "headline": "categorial-to-numerical",
   "url": "https:\/\/tactlabs.github.io\/mlnotes\/pandas\/categorial-to-numerical\/",
   "wordCount": "148",
-  "datePublished": "0001-01-01T00:00:00\x2b00:00",
+  "datePublished": "0001-01-01T00:00:00\u002b00:00",
   "author": {
     "@type": "Person",
     "name": "Altair"
@@ -122,15 +123,15 @@
       <h1 class="article-title">categorial-to-numerical</h1>
     </header>
     <div class="content">
-    <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;sam&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;archery&#39;</span><span class="p">,</span> <span class="s1">&#39;badminton&#39;</span><span class="p">,</span> <span class="s1">&#39;athletics&#39;</span><span class="p">,</span> <span class="s1">&#39;cycling_road&#39;</span><span class="p">,</span> <span class="s1">&#39;canoe_sprint&#39;</span><span class="p">,</span> <span class="s1">&#39;boxing&#39;</span><span class="p">],</span>
     <span class="s1">&#39;medal&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;gold&#39;</span><span class="p">,</span> <span class="s1">&#39;silver&#39;</span><span class="p">,</span> <span class="s1">&#39;bronze&#39;</span><span class="p">,</span> <span class="s1">&#39;gold&#39;</span><span class="p">,</span> <span class="s1">&#39;gold&#39;</span><span class="p">,</span> <span class="s1">&#39;silver&#39;</span><span class="p">]</span>
 <span class="p">}</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -187,7 +188,7 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_medal_points</span><span class="p">(</span><span class="n">medal</span><span class="p">):</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_medal_points</span><span class="p">(</span><span class="n">medal</span><span class="p">):</span>
     <span class="k">if</span><span class="p">(</span><span class="n">medal</span> <span class="o">==</span> <span class="s1">&#39;gold&#39;</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">10</span>
     
@@ -198,8 +199,8 @@
         <span class="k">return</span> <span class="mi">1</span>
     
     <span class="k">return</span> <span class="mi">0</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;medal_points&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;medal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_medal_points</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;medal_points&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;medal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_medal_points</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span>
 </code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -263,7 +264,7 @@
   </tbody>
 </table>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
 </code></pre></div>
   </div>
   
