@@ -47,6 +47,24 @@
     </item>
     
     <item>
+      <title>Get-specific-contents</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/get-specific-contents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/get-specific-contents/</guid>
+      <description>content = &amp;#34;&amp;#34;&amp;#34;&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!-- The following setting enables collapsible lists --&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;#34;#human&amp;#34;&amp;gt;Human&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;collapse-section&amp;#34;&amp;gt; &amp;lt;a class=&amp;#34;collapsed collapse-toggle&amp;#34; data-toggle=&amp;#34;collapse&amp;#34; href=#mammals&amp;gt;Mammals&amp;lt;/a&amp;gt; &amp;lt;div class=&amp;#34;collapse&amp;#34; id=&amp;#34;mammals&amp;#34;&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#alpaca&amp;#34;&amp;gt;Alpaca&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#armadillo&amp;#34;&amp;gt;Armadillo&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#sequence_only&amp;#34;&amp;gt;Armadillo&amp;lt;/a&amp;gt; (sequence only) &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#baboon&amp;#34;&amp;gt;Baboon&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#bison&amp;#34;&amp;gt;Bison&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#bonobo&amp;#34;&amp;gt;Bonobo&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#brown_kiwi&amp;#34;&amp;gt;Brown kiwi&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#bushbaby&amp;#34;&amp;gt;Bushbaby&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#sequence_only&amp;#34;&amp;gt;Bushbaby&amp;lt;/a&amp;gt; (sequence only) &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#cat&amp;#34;&amp;gt;Cat&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#chimp&amp;#34;&amp;gt;Chimpanzee&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#chinese_hamster&amp;#34;&amp;gt;Chinese hamster&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#chinese_pangolin&amp;#34;&amp;gt;Chinese pangolin&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#cow&amp;#34;&amp;gt;Cow&amp;lt;/a&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#crab-eating_macaque&amp;#34;&amp;gt;Crab-eating_macaque&amp;lt;/a&amp;gt; &amp;lt;div class=&amp;#34;gbFooterCopyright&amp;#34;&amp;gt; &amp;amp;copy; 2017 The Regents of the University of California.</description>
+    </item>
+    
+    <item>
+      <title>Negative-lookahead</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/negative-lookahead/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/negative-lookahead/</guid>
+      <description>import retest = [ (&amp;#39;i sure like eating pie, but i love donuts&amp;#39;, True), (&amp;#39;i sure like eating pie, but i hate donuts&amp;#39;, True), (&amp;#39;i sure hate eating pie, but i like donuts&amp;#39;, False) ]rx = re.compile(r&amp;#34;^i ((?!hate|pie).)* pie&amp;#34;, re.X) for t,v in test: m = rx.match(t) print(t, &amp;#34;==&amp;gt;&amp;#34;, &amp;#34;pass&amp;#34; if bool(m) == v else &amp;#34;fail&amp;#34;) i sure like eating pie, but i love donuts ==&amp;gt; pass i sure like eating pie, but i hate donuts ==&amp;gt; pass i sure hate eating pie, but i like donuts ==&amp;gt; pass  </description>
+    </item>
+    
+    <item>
       <title>Ontario-postal-code</title>
       <link>https://tactlabs.github.io/mlnotes/regex/ontario-postal-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -83,6 +101,24 @@
     </item>
     
     <item>
+      <title>Remove-symbols</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/remove-symbols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/remove-symbols/</guid>
+      <description>content = &amp;#34;This device is costing only 12.89$. This is fantastic!&amp;#34;content &#39;This device is costing only 12.89$. This is fantastic!&#39;  import rere.sub(r&amp;#39;[^\w]&amp;#39;, &amp;#39; &amp;#39;, content) &#39;This device is costing only 12 89 This is fantastic &#39;  # Note: # \w will match alphanumeric characters and underscores # \w # will match anything that’s not alphanumeric or underscore</description>
+    </item>
+    
+    <item>
+      <title>Specific-pattern1</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/specific-pattern1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/specific-pattern1/</guid>
+      <description>import refn = &amp;#34;DC_QnA_bo_v.15.12.3_DE_duplicates.xlsx&amp;#34; rgx = re.compile(&amp;#39;\b_[A-Z]{2}\b&amp;#39;) print(re.findall(rgx, fn)) []  rgx = re.compile(&amp;#39;(?&amp;lt;=_)[A-Z]+(?=_)&amp;#39;) print(re.findall(rgx, fn)) [&#39;DE&#39;]  </description>
+    </item>
+    
+    <item>
       <title>Untitled</title>
       <link>https://tactlabs.github.io/mlnotes/regex/untitled/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -98,6 +134,51 @@
       
       <guid>https://tactlabs.github.io/mlnotes/regex/compile-expression/</guid>
       <description>import re# precompile regex patterns regex_entries = [ re.compile(p) for p in [&amp;#39;awesome&amp;#39;, &amp;#39;ocean&amp;#39;] ]content = &amp;#39;Duckduck go is awesome and it is getting better everyday&amp;#39; print(&amp;#39;Text : {!r}&amp;#39;.format(content)) Text : &#39;Duckduck go is awesome and it is getting better everyday&#39;  for regex in regex_entries: print(&amp;#39;Finding {} -&amp;gt; &amp;#39;.format(regex.pattern), end = &amp;#39; &amp;#39;) if(regex.search(content)): print(&amp;#39;matched&amp;#39;) else: print(&amp;#39;not matched&amp;#39;) Finding awesome -&amp;gt; matched Finding ocean -&amp;gt; not matched  </description>
+    </item>
+    
+    <item>
+      <title>letter-match</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/letter-match/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/letter-match/</guid>
+      <description>import recontents = [ &amp;#34;AB23&amp;#34;, &amp;#34;A2B3&amp;#34;, &amp;#34;DE09&amp;#34;, &amp;#34;MN90&amp;#34;, &amp;#34;XYi9&amp;#34;, &amp;#34;XY90&amp;#34; ]for content in contents: regex_pattern = &amp;#34;(?:AB|DE|XY)\d+&amp;#34; # starts with AB or DE; should contain one or more number m = re.match(regex_pattern, content) if(m): print(&amp;#39;matched : &amp;#39;+content) matched : AB23 matched : DE09 matched : XY90  </description>
+    </item>
+    
+    <item>
+      <title>number-check</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/number-check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/number-check/</guid>
+      <description>import repattern = re.compile(&amp;#34;^([0-9]+)+$&amp;#34;) content = &amp;#34;s23434&amp;#34; if(pattern.match(content)): print(pattern.match(content).pos) else: print(&amp;#39;not matched&amp;#39;) not matched  content = &amp;#34;23434&amp;#34; if(pattern.match(content)): print(&amp;#39;matched at : &amp;#39;, pattern.match(content).pos) else: print(&amp;#39;not matched&amp;#39;) matched at : 0  </description>
+    </item>
+    
+    <item>
+      <title>search</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/search/</guid>
+      <description>import redata = [ &amp;#34;name[&amp;#39;toronto&amp;#39;] = &amp;#39;One&amp;#39;&amp;#34;, &amp;#34;state[&amp;#39;ontario&amp;#39;] = &amp;#39;Two&amp;#39;&amp;#34;, &amp;#34;country[&amp;#39;canada&amp;#39;][&amp;#39;ca&amp;#39;] = &amp;#39;Three&amp;#39;&amp;#34;, &amp;#34;extra[&amp;#39;maple&amp;#39;] = &amp;#39;Four&amp;#39;&amp;#34; ]REGEX = re.compile(r&amp;#34;\[&amp;#39;(?P&amp;lt;word&amp;gt;.*?)&amp;#39;\]&amp;#34;)for line in data: found = REGEX.search(line) if found: print(found.group(&amp;#39;word&amp;#39;)) toronto ontario canada maple  </description>
+    </item>
+    
+    <item>
+      <title>simple-match</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/simple-match/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/simple-match/</guid>
+      <description>import recontent = &amp;#34;Eminem means positive&amp;#34;a = re.search(&amp;#39;^Em.*ve$&amp;#39;, content)if(a): print(&amp;#39;matched&amp;#39;) else: print(&amp;#39;not matched&amp;#39;) matched  # More situations # Match Canadian postal code # Phone number # Start with /home # Contains /User/raja</description>
+    </item>
+    
+    <item>
+      <title>simple-regex</title>
+      <link>https://tactlabs.github.io/mlnotes/regex/simple-regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tactlabs.github.io/mlnotes/regex/simple-regex/</guid>
+      <description>import repattern = &amp;#39;awesome&amp;#39; content = &amp;#39;Duckduck go is awesome and it is getting better everyday&amp;#39; match = re.search(pattern, content) #print(match) start = match.start() end = match.end() #print(match.string) print(start, end) 15 22  </description>
     </item>
     
     <item>

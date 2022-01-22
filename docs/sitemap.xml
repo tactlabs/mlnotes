@@ -24,8 +24,16 @@
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/get-specific-contents/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/index.xml</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/negative-lookahead/</loc>
   </url>
   
   <url>
@@ -60,8 +68,16 @@
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/remove-symbols/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/sklearn/index.xml</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/specific-pattern1/</loc>
   </url>
   
   <url>
@@ -135,11 +151,31 @@
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/letter-match/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/classification/linear-model/</loc>
   </url>
   
   <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/number-check/</loc>
+  </url>
+  
+  <url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/regression/regression/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/search/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/simple-match/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tactlabs.github.io/mlnotes/regex/simple-regex/</loc>
   </url>
   
   <url>
