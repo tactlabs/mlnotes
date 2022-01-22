@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TactLabs</title>
@@ -15,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tactlabs.github.io/mlnotes/machine-learning/classification/classification/</guid>
-      <description>print(&amp;#34;classification&amp;#34;) </description>
+      <description>print(&amp;#34;classification&amp;#34;)</description>
     </item>
     
     <item>
@@ -24,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tactlabs.github.io/mlnotes/machine-learning/classification/linear-model/</guid>
-      <description>print(&amp;#34;linear-model.&amp;#34;) </description>
+      <description>print(&amp;#34;linear-model.&amp;#34;)</description>
     </item>
     
     <item>
@@ -33,7 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tactlabs.github.io/mlnotes/machine-learning/regression/regression/</guid>
-      <description>print(&amp;#34;regression&amp;#34;) </description>
+      <description>print(&amp;#34;regression&amp;#34;)</description>
     </item>
     
   </channel>

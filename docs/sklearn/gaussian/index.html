@@ -17,18 +17,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta property="og:title" content="gaussian" />
-<meta property="og:description" content="from sklearn.naive_bayes import GaussianNB import numpy as np #assigning predictor and target variables x= np.array([[-3,7],[1,5], [1,2], [-2,0], [2,3], [-4,0], [-1,1], [1,1], [-2,2], [2,7], [-4,1], [-2,7]]) y = np.array([3, 3, 3, 3, 4, 3, 3, 4, 3, 4, 4, 4]) #Create a Gaussian Classifier model = GaussianNB() # Train the model using the training sets  model.fit(x, y) GaussianNB()  #Predict Output  predicted= model.predict([[1,2],[3,4]]) print(predicted) [3 4]  " />
+<meta property="og:description" content="from sklearn.naive_bayes import GaussianNB import numpy as np#assigning predictor and target variables x= np.array([[-3,7],[1,5], [1,2], [-2,0], [2,3], [-4,0], [-1,1], [1,1], [-2,2], [2,7], [-4,1], [-2,7]]) y = np.array([3, 3, 3, 3, 4, 3, 3, 4, 3, 4, 4, 4])#Create a Gaussian Classifier model = GaussianNB()# Train the model using the training sets  model.fit(x, y) GaussianNB()  #Predict Output  predicted= model.predict([[1,2],[3,4]]) print(predicted) [3 4]  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tactlabs.github.io/mlnotes/sklearn/gaussian/" /><meta property="og:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/><meta property="article:section" content="sklearn" />
-
-
-
+<meta property="og:url" content="https://tactlabs.github.io/mlnotes/sklearn/gaussian/" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://tactlabs.github.io/mlnotes/images/frontpage_twitter_card.png"/>
 
 <meta name="twitter:title" content="gaussian"/>
-<meta name="twitter:description" content="from sklearn.naive_bayes import GaussianNB import numpy as np #assigning predictor and target variables x= np.array([[-3,7],[1,5], [1,2], [-2,0], [2,3], [-4,0], [-1,1], [1,1], [-2,2], [2,7], [-4,1], [-2,7]]) y = np.array([3, 3, 3, 3, 4, 3, 3, 4, 3, 4, 4, 4]) #Create a Gaussian Classifier model = GaussianNB() # Train the model using the training sets  model.fit(x, y) GaussianNB()  #Predict Output  predicted= model.predict([[1,2],[3,4]]) print(predicted) [3 4]  "/>
+<meta name="twitter:description" content="from sklearn.naive_bayes import GaussianNB import numpy as np#assigning predictor and target variables x= np.array([[-3,7],[1,5], [1,2], [-2,0], [2,3], [-4,0], [-1,1], [1,1], [-2,2], [2,7], [-4,1], [-2,7]]) y = np.array([3, 3, 3, 3, 4, 3, 3, 4, 3, 4, 4, 4])#Create a Gaussian Classifier model = GaussianNB()# Train the model using the training sets  model.fit(x, y) GaussianNB()  #Predict Output  predicted= model.predict([[1,2],[3,4]]) print(predicted) [3 4]  "/>
 
     
 <script type="application/ld+json">
@@ -36,9 +33,9 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "gaussian",
-  "url": "https:\/\/tactlabs.github.io\/mlnotes\/sklearn\/gaussian\/",
-  "wordCount": "64",
-  "datePublished": "0001-01-01T00:00:00\u002b00:00",
+  "url": "https://tactlabs.github.io/mlnotes/sklearn/gaussian/",
+  "wordCount": "61",
+  "datePublished": "0001-01-01T00:00:00&#43;00:00",
   "author": {
     "@type": "Person",
     "name": "Altair"
@@ -122,23 +119,19 @@
     </header>
     <div class="content">
     <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#assigning predictor and target variables</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#assigning predictor and target variables</span>
 <span class="n">x</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">]])</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#Create a Gaussian Classifier</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Train the model using the training sets </span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</code></pre></div><pre><code>GaussianNB()
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#Create a Gaussian Classifier</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Train the model using the training sets </span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code></pre></div>
+<pre><code>GaussianNB()
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#Predict Output </span>
 <span class="n">predicted</span><span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">predicted</span><span class="p">)</span>
-</code></pre></div><pre><code>[3 4]
+<span class="k">print</span><span class="p">(</span><span class="n">predicted</span><span class="p">)</span></code></pre></div>
+<pre><code>[3 4]
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
-</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"></code></pre></div>
   </div>
   
       </div>
