@@ -72,6 +72,10 @@
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/if-else-pandas-2/</loc>
   </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/iloc-position-slice/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/iloc-simple/</loc>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/index-isin/</loc>
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/infer-objects/</loc>
@@ -80,19 +84,55 @@
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/int-and-nan/</loc>
   </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/last-n-rows/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/last-nth-to-last-second/</loc>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/classification/linear-model/</loc>
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/index.xml</loc>
   </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/max-as-a-new-column/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/min-max-avg-as-new-columns/</loc>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/pandas/index.xml</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/pandas-version/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/pandas-with-numpy-zeroes/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/pandas-with-random-int/</loc>
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/index.xml</loc>
   </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/random-integer-between-2-and-10/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/random-integer-with-2-dimension/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/random-param-single-param/</loc>
+  </url><url>
     <loc>https://tactlabs.github.io/mlnotes/machine-learning/regression/regression/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/select-column-by-index/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/show-negative-values-red/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/skip-a-single-row/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/skip-multiple-rows/</loc>
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/sklearn/index.xml</loc>
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/basics/snekha1/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/sort-rows/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/string-to-dataframe/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/sum-as-new-column/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/sum-of-all-on-na/</loc>
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/template/t/</loc>
   </url><url>
@@ -101,6 +141,10 @@
     <loc>https://tactlabs.github.io/mlnotes/template/index.xml</loc>
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/python/advanced/two/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/unicode-issue-and-fix/</loc>
+  </url><url>
+    <loc>https://tactlabs.github.io/mlnotes/pandas/values-and-index/</loc>
   </url><url>
     <loc>https://tactlabs.github.io/mlnotes/deep-learning/advanced/xyz/</loc>
   </url>
